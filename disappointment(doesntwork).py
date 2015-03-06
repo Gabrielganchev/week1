@@ -11,19 +11,19 @@ for i in range(int(num)):
 
 
 def fill_tetrahedron(num):
-    volume =((a**3)/(6*(math.sqrt(2)))/1000)
+    volume =((num**3)/(6*(math.sqrt(2)))/1000)
     volume=round(volume, 2)
 
-def tetrahedron_filled(tetrahedrons, water):#water reads it like inside variable // :(
-    if water >= c:
-        for number in tetrahedrons:
-            value = fill_tetrahedron(number)
-            water = water - value
-            full_tetrahedrons = 0
-            full_tetrahedrons += 1
-        return full_tetrahedrons
+def tetrahedron_filled(tetrahedrons, water):
+    for number in tetrahedrons:
+        value = fill_tetrahedron(number)
+        
+        water = int(water) - value
+        full_tetrahedrons = 0
+        full_tetrahedrons += 1
+    return full_tetrahedrons
 
-print(tetrahedron_filled(water ,tetrahedrons))
-print(tetrahedron_filled())
+print(tetrahedron_filled(tetrahedrons, water))
+
 
 
