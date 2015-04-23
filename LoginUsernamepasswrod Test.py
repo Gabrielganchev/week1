@@ -11,10 +11,8 @@ if len(username) >3 and username=="gabriel":
     print("Valid username")
 else:
     time.sleep(1)
-    
     print("Username must be more the 3 digits  or letters")
-    exit.loop
-
+    
 time.sleep(1)
 
 password = (input ("Type Password Please ").lower())
@@ -59,13 +57,15 @@ if password == "1234suzy" and username == "gabriel":
     time.sleep(0.5)
     
     print("Welcome Gabriel ")
+    
     #return ("welcome Gabriel")
 else :
     time.sleep(1)
     print(" Username or Password are wrong")
     time.sleep(0.5)
     print("Please try again")
+    exit
     #return ("Wrong Username or password  Try again")\
     
-    
+
     
